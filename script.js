@@ -8,4 +8,8 @@ $.get('https://dwolverton.github.io/fe-demo/data/blog-posts.json', (data) => {
     console.log(entry.title);
   });
 
+}).always(() => {
+  console.log("i always run!");
+}).catch((err) => {
+  console.log("didnt work", err);
 });
