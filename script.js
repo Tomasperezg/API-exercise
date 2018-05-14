@@ -4,6 +4,8 @@ $.get('https://dwolverton.github.io/fe-demo/data/blog-posts.json', (data) => {
   console.log(data.posts);
   console.log(data.posts[0]);
   data.posts.forEach(function(entry){
+    console.log(entry.tags);
     console.log(entry.title);
-  })
+  });
+
 });
